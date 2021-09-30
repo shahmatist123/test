@@ -3,7 +3,7 @@ html body {
     font-family: 'Roboto', sans-serif;
 }
 #loginbtn{
-	cursor: pointer;
+    cursor: pointer;
 }
 #photoimg {
     cursor: pointer;
@@ -66,7 +66,7 @@ html body {
 
     color: #000;
     font-size: 12px;
-border: none !important;
+    border: none !important;
     padding: 10px 0;
 }
 .form__choose-3-drop-price-input{
@@ -3829,7 +3829,7 @@ button::-moz-focus-inner {
     font-size: 14px;
     border: solid 1px #9b9b9b;
     padding: 10px 24px;
-    margin-left: 10px;
+    margin-left: 21px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -4357,7 +4357,88 @@ input[type=checkbox]:checked + label:before {
     border: none;
     margin: 20px -20px 0;
 }
+.ads-admin{
+    display: flex;
+    align-items: stretch;
+    min-height: 100vh;
+}
+.ads-admin-left{
+    flex: 0 0 283px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.04);
+    background-color: #041f39;
+    padding-top: 27px;
+}
 
+.ads-admin-right{
+    flex: 1 1 auto;
+}
+.ads-admin-left-link{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #d8dde2;
+    padding: 11px 30px;
+    position: relative;
+    transition: ease-out 0.15s;
+}
+.ads-admin-left-link.first{
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.ads-admin-left-link:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #d8dde2;
+    text-decoration: none;
+}
+.ads-admin-left-header{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #d8dde2;
+    padding-left: 30px;
+    font-weight: 300;
+}
+.ads-admin-left-header span{
+    display: block;
+    margin-left: 10px;
+}
+.ads-admin-left-counter{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(212,22,84,0.8);
+    font-size: 14px;
+    color: #d8dde2;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+.ads-admin-left-wrapper{
+    margin-top: 26px;
+    padding-bottom: 30px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.15);
+}
+.ads-admin-left-wrapper:last-of-type{
+    border-bottom: none;
+}
+.ads-admin-right-header{
+    font-size: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-bottom: solid 1px #e2e7ec;
+}
+.adss-header__btn-item3.admin-login{
+    padding: 10px 20px;
+    font-size: 14px; color: #4a4a4a;
+    border-radius: 20px;
+    border: solid 1px #ced2dc;
+    cursor: pointer;
+}
+.adss-header__btn-item3.admin-login img{
+    margin-right: 7px;
+}
 @media screen and (max-width: 1200px) {
     .suggestions-wrapper > div * {
         width: 299px;
@@ -6676,15 +6757,15 @@ input[type=checkbox]:checked + label:before {
     }
 }
 
-    @media screen and (max-width: 340px) {
-        .map-tile .mileage p{
-            margin-bottom: 0;
-        }
-        .map-tile .mileage{
-            display: block !important;
-            margin-bottom: 5px;
-        }
+@media screen and (max-width: 340px) {
+    .map-tile .mileage p{
+        margin-bottom: 0;
     }
+    .map-tile .mileage{
+        display: block !important;
+        margin-bottom: 5px;
+    }
+}
 /*Modal menu*/
 
 .important-menu::-webkit-scrollbar {
